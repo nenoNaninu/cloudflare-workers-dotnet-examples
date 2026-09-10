@@ -1,0 +1,12 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <CentralPackageTransitivePinningEnabled>true</CentralPackageTransitivePinningEnabled>
+    <ILCompilerLLVMVersion>10.0.0-rc.1.26357.1</ILCompilerLLVMVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageVersion Include="Cloudflare.Workers.Hosting" Version="0.0.2" />
+    <PackageVersion Include="Microsoft.DotNet.ILCompiler.LLVM" Version="$(ILCompilerLLVMVersion)" />
+    <PackageVersion Include="runtime.$(NETCoreSdkPortableRuntimeIdentifier).Microsoft.DotNet.ILCompiler.LLVM" Version="$(ILCompilerLLVMVersion)" />
+  </ItemGroup>
+</Project>

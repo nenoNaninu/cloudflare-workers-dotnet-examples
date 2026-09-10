@@ -1,0 +1,8 @@
+{
+  "name": "hello-fetch-worker",
+  "main": "bin/Release/net10.0/wasi-wasm/publish/worker/index.mjs",
+  "compatibility_date": "2026-09-10",
+  "build": {
+    "command": "dotnet publish HelloFetchWorker.csproj -c Release"
+  }
+}
