@@ -9,7 +9,7 @@ Minimal examples for [cloudflare-workers-dotnet](https://github.com/nenoNaninu/c
 - [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0)
 - [Node.js 22 or later](https://nodejs.org/)
 - [WASI SDK 29](https://github.com/WebAssembly/wasi-sdk/releases/tag/wasi-sdk-29)
-- A [Cloudflare account](https://dash.cloudflare.com/sign-up)
+- [Cloudflare account](https://dash.cloudflare.com/sign-up)
 
 After extracting the WASI SDK, set `WASI_SDK_PATH` to its directory. For example:
 
@@ -45,7 +45,6 @@ npm run dev
 Log in to Cloudflare and deploy:
 
 ```sh
-npx wrangler login
 npm run deploy
 ```
 
