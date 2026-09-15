@@ -45,7 +45,7 @@ jobs:
           echo "WASI_SDK_PATH=$sdk" >> "$GITHUB_ENV"
 
       - name: Restore
-        run: dotnet restore samples/HelloFetchWorker/HelloFetchWorker.csproj
+        run: dotnet restore src/HelloFetchWorker/HelloFetchWorker.csproj
 
       - name: Publish
-        run: dotnet publish samples/HelloFetchWorker/HelloFetchWorker.csproj -c Release --no-restore
+        run: dotnet publish src/HelloFetchWorker/HelloFetchWorker.csproj -c Release --no-restore
